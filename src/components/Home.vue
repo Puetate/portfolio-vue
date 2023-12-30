@@ -9,7 +9,7 @@ let text = [
 <template>
     <section class="h-screen relative flex flex-col justify-center gap-8 text-text_withe" id="home">
 
-        <div class="text-8xl font-extrabold">
+        <div class="text-7xl font-extrabold">
             <span class="text-text_orange" id="name">JHOEL </span>
             <span class="text-text_orange" id="surname">PUETATE</span>
         </div>

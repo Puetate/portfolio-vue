@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import SocialNetworks from './SocialNetworks.vue';
+import Title from './Title.vue';
+
+const title = "SOBRE MI";
 
 </script>
 
 <template>
     <section class="h-screen relative flex flex-col justify-center gap-8 text-text_withe" id="about">
 
-        <div class="text-5xl font-extrabold text-text_orange">SOBRE MI</div>
-
+        <Title :title=title></Title>
         <div class="flex flex-row h-max">
             <div class="flex-auto w-72 text-justify text-xl">
                 <div class="mb-2">
