@@ -1,14 +1,16 @@
 <template>
-    <div>
-        <div class="text-5xl font-extrabold  text-text_withe">
+    <div class="pr-16 text-slate-100">
+        <div class="text-2xl text-center mb-2 font-extrabold  ">
             {{ title }}
         </div>
-        <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-row justify-center items-center gap-16">
             <!-- Utiliza v-for para recorrer el array de skills y renderizar cada habilidad -->
-            <div v-for="(skill, index) in skills" :key="index">
+            <div class="" v-for="(skill, index) in skills" :key="index">
                 <!-- Puedes personalizar el renderizado según tus necesidades -->
-                <component :is="skill.icon" :size="40" color="blue" />
-                <span>{{ skill.nameSkill }}</span>
+                <div class="flex flex-col gap-2  items-center">
+                    <component :is="skill.icon" :size="40" :color="skill.color" />
+                    <span>{{ skill.nameSkill }}</span>
+                </div>
             </div>
         </div>
     </div>
@@ -18,7 +20,8 @@
 
 export interface Skill {
     nameSkill: string;
-    icon: any
+    icon: any,
+    color: string
 }
 import { defineComponent, PropType } from 'vue';
 
