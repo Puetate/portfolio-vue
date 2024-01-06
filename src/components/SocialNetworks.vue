@@ -1,17 +1,20 @@
 <script setup lang="ts">
 import { IconBrandGithubFilled } from '@tabler/icons-vue';
-import { IconBrandLinkedin } from '@tabler/icons-vue';
 </script>
 
 <template>
-    <div class="flex gap-4">
+    <div class="flex flex-row items-center gap-4">
 
-        <a href="https://github.com/Puetate">
+        <a class="" href="https://github.com/Puetate">
             <IconBrandGithubFilled :size="40" color="white" stroke-width="1" />
         </a>
 
-        <a href="https://www.linkedin.com/in/jhoel-puetate-915056127/">
-            <IconBrandLinkedin :size="40" color="blue" />
+        <a class="w-12" href="https://www.linkedin.com/in/jhoel-puetate-915056127/">
+            <img src="../assets/linkedin-svgrepo-com.svg" alt="SVG Icon">
+        </a>
+
+        <a class="w-10" href="https://www.linkedin.com/in/jhoel-puetate-915056127/">
+            <img src="../assets/instagram-1-svgrepo-com.svg" alt="SVG Icon">
         </a>
     </div>
 </template>
