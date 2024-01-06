@@ -1,43 +1,51 @@
 <template>
-    <div class="pr-16 text-slate-100">
+    <div class="pr-4 text-slate-100">
         <div class="text-2xl text-center mb-2 font-extrabold  ">
             {{ title }}
         </div>
-        <div class="flex flex-row justify-center items-center gap-16">
+        <div class="flex flex-wrap justify-center items-center gap-16">
             <!-- Utiliza v-for para recorrer el array de skills y renderizar cada habilidad -->
-            <div class="" v-for="(skill, index) in skills" :key="index">
+            <div v-for="(skill, index) in skills" :key="index">
                 <!-- Puedes personalizar el renderizado según tus necesidades -->
-                <div class="flex flex-col gap-2  items-center">
-                    <component :is="skill.icon" :size="40" :color="skill.color" />
+                <div :class="`border-b-${getColorSkill(skill.level)}-500`"  class="w-40 flex flex-col py-2 items-center rounded-md  bg-opacity-20 backdrop-blur-md border-b-2 " style="background-image: linear-gradient(to top, rgba(255, 255, 255, 0.068), rgba(255,255,255,0) 50%); backdrop-filter: blur(10px);">
+                    <img class="w-10 pb-3" :src="`src/assets/${skill.icon}.svg`" :alt="`${skill.icon}`">
                     <span>{{ skill.nameSkill }}</span>
+                    <div  :class="` flex text-${getColorSkill(skill.level)}-500`">
+                        <IconArrowBadgeUp color="white"></IconArrowBadgeUp>
+                        {{ skill.level }}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import { defineProps } from 'vue';
+import { IconArrowBadgeUp } from '@tabler/icons-vue';
 
 export interface Skill {
     nameSkill: string;
-    icon: any,
-    color: string
+    icon: string;
+    color: string;
+    level: string;
 }
-import { defineComponent, PropType } from 'vue';
 
-export default defineComponent({
-    props: {
-        title: {
-            type: String as PropType<string>,
-            required: true,
-        },
-        skills: {
-            type: [] as PropType<Skill[]>,
-            required: true
-        }
+const ColorSkill: Record<string , string> = {
+    beginner: 'green',
+    intermediate: 'blue',
+    advanced: 'yellow',
+};
 
-    },
-});
+const getColorSkill = (level: string): string => {
+    return ColorSkill[level];
+}
+
+
+defineProps<{
+    title: string,
+    skills: Skill[]
+}>()
 </script>
   
 <style scoped>
