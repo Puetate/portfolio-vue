@@ -3,20 +3,28 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
-      colors:{
-        bg_main:'#5C6682',
-        text_withe:'#909CBC',
-        text_orange:'#FFCC70',
-        text_blue:'#0C356A'
+      colors: {
+        personal: {
+          primary: '#091518',
+          secondary: '#132E35',
+          ternary: '#2D4A53',
+          quarter: '#69818D',
+          white: '#AFB3B7',
+          fifth: '#5A636A',
+        },
       },
       fontFamily: {
         code: ['Cascadia Code', 'monospace'],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated'),
+    require('flowbite/plugin')
+  ],
 }
 
