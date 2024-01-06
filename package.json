@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
+    "prepreview": "npm run build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -19,6 +20,7 @@
     "vue-tabler-icons": "^2.21.0"
   },
   "devDependencies": {
+    "@types/node": "^20.10.6",
     "@vitejs/plugin-vue": "^4.5.2",
     "autoprefixer": "^10.4.16",
     "naive-ui": "^2.36.0",

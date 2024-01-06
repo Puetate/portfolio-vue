@@ -6,37 +6,37 @@ const title = "SKILLS";
 
 const titleLanguage = "LENGUAJES DE PROGRAMACIÓN";
 const skillLanguages: Skill[] = [
-    { nameSkill: "PHP", icon: "php", color: "cyan" , level:"beginner"},
-    { nameSkill: "PYTHON", icon: "python", color: "yellow" , level:"beginner"},
-    { nameSkill: "JAVA", icon: "java", color: "blue" , level:"intermediate"},
-    { nameSkill: "JAVASCRIPT", icon: "javascript", color: "yellow" , level:"intermediate"},
-    { nameSkill: "TYPESCRIPT", icon: "typescript", color: "#0077d8" , level:"intermediate"},
-    { nameSkill: "DART", icon: "dart", color: "#26a5ff" , level:"advanced"},
+    { nameSkill: "PHP", icon: "../assets/php.svg", color: "cyan", level: "beginner" },
+    { nameSkill: "PYTHON", icon: "../assets/python.svg", color: "yellow", level: "beginner" },
+    { nameSkill: "JAVA", icon: "../assets/java.svg", color: "blue", level: "intermediate" },
+    { nameSkill: "JAVASCRIPT", icon: "../assets/javascript.svg", color: "yellow", level: "intermediate" },
+    { nameSkill: "TYPESCRIPT", icon: "../assets/typescript.svg", color: "#0077d8", level: "intermediate" },
+    { nameSkill: "DART", icon: "../assets/dart.svg", color: "#26a5ff", level: "advanced" },
 ];
 
 const titleFramework = "FRAMEWORKS";
 const skillFrameworks: Skill[] = [
-    { nameSkill: "LARAVEL", icon: "laravel", color: "red" , level:"beginner"},
-    { nameSkill: "ANGULAR", icon: "angular", color: "red" , level:"beginner"},
-    { nameSkill: "VUE", icon: "vue", color: "green" , level:"beginner"},
-    { nameSkill: "NESTJS", icon: "nest", color: "blue" , level:"intermediate"},
-    { nameSkill: "REACT", icon: "react", color: "red" , level:"intermediate"},
-    { nameSkill: "FLUTTER", icon: "flutter", color: "#12c4ff" , level:"advanced"},
+    { nameSkill: "LARAVEL", icon: "../assets/laravel.svg", color: "red", level: "beginner" },
+    { nameSkill: "ANGULAR", icon: "../assets/angular.svg", color: "red", level: "beginner" },
+    { nameSkill: "VUE", icon: "../assets/vue.svg", color: "green", level: "beginner" },
+    { nameSkill: "NESTJS", icon: "../assets/nest.svg", color: "blue", level: "intermediate" },
+    { nameSkill: "REACT", icon: "../assets/react.svg", color: "red", level: "intermediate" },
+    { nameSkill: "FLUTTER", icon: "../assets/flutter.svg", color: "#12c4ff", level: "advanced" },
 ];
 
 const titleDatabase = "BASE DE DATOS";
 const skillDatabases: Skill[] = [
-    { nameSkill: "POSTGRESQL", icon: "postgresql", color: "blue" , level:"beginner"},
-    { nameSkill: "SQL SERVER", icon: "sqlserver", color: "#1DA1F2" , level:"intermediate"},
-    { nameSkill: "MONGOBD", icon: "mongo", color: "green" , level:"intermediate"},
-    { nameSkill: "MYSQL", icon: "mysql", color: "#0096d1" , level:"advanced"},
+    { nameSkill: "POSTGRESQL", icon: "../assets/postgresql.svg", color: "blue", level: "beginner" },
+    { nameSkill: "SQL SERVER", icon: "../assets/sqlserver.svg", color: "#1DA1F2", level: "intermediate" },
+    { nameSkill: "MONGOBD", icon: "../assets/mongo.svg", color: "green", level: "intermediate" },
+    { nameSkill: "MYSQL", icon: "../assets/mysql.svg", color: "#0096d1", level: "advanced" },
 ];
 
 const titleTool = "SOFTWARE Y HERRAMIENTAS";
 const skillTools: Skill[] = [
-    // { nameSkill: "a", icon: "", color:"blue" , level:"beginner"},
-    { nameSkill: "GIT", icon: "git", color: "blue" , level:"intermediate"},
-    { nameSkill: "JIRA", icon: "jira", color: "blue" , level:"intermediate"},
+    // { nameSkill: "a", icon: "../assets/.svg", color:"blue" , level:"beginner"},
+    { nameSkill: "GIT", icon: "../assets/git.svg", color: "blue", level: "intermediate" },
+    { nameSkill: "JIRA", icon: "../assets/jira.svg", color: "blue", level: "intermediate" },
 ];
 
 
