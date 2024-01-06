@@ -17,17 +17,18 @@ const scrollToSection = (section: string): void => {
 </script>
 <template>
     <!-- Sidebar -->
-    <aside>
+    <header class="text-slate-200 rounded-b-3xl sticky top-0 z-10 flex py-1 sm:items-center px-14 sm:justify-center md:justify-between md:items-center" id="head" style="background-image: linear-gradient(to top, rgba(255, 255, 255, 0.068), rgba(255,255,255,0) 50%); backdrop-filter: blur(10px);">
+
         <!-- Centrar la imagen -->
-        <div class="flex items-center justify-center mb-6">
-            <img src="../assets/jhoel_pixel.png" alt="jhoel_puetate_pixel" class="rounded-full w-3/4">
+        <div class="">
+            <img src="../assets/jhoel_pixel.png" alt="jhoel_puetate_pixel" class="rounded-full h-14 py-1">
         </div>
 
         <!-- Opciones del Sidebar -->
         <nav class="">
-            <ul class="flex flex-col justify-center items-center gap-y-3 font-semibold">
+            <ul class="relative h-max flex flex-row justify-center items-center gap-x-16 font-semibold">
                 <li class=" hover:text-neutral-50">
-                    <a @click="scrollToSection('home')">Jhoel</a>
+                    <a @click="scrollToSection('home')">Home</a>
                 </li>
                 <li class=" hover:text-neutral-50">
                     <a @click="scrollToSection('about')">About</a>
@@ -46,7 +47,7 @@ const scrollToSection = (section: string): void => {
                 </li>
             </ul>
         </nav>
-    </aside>
+    </header>
 </template>
   
   
