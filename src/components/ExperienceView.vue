@@ -24,7 +24,7 @@ defineProps<{
             <li class="mb-10 ms-10">
                 <span
                     class="absolute flex items-center  mt-2 justify-center w-12 h-12 -start-6 bg-gray-600 rounded-full   dark:ring-gray-900 dark:bg-blue-900">
-                    <img class="w-6" :src="`src/assets/${iconSection}.svg`" :alt="`${iconSection}`">
+                    <img class="w-6" :src="`../assets/${iconSection}.svg`" :alt="`${iconSection}`">
 
                 </span>
 
