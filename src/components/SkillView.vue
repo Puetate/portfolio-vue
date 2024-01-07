@@ -7,7 +7,7 @@
             <!-- Utiliza v-for para recorrer el array de skills y renderizar cada habilidad -->
             <div v-for="(skill, index) in skills" :key="index">
                 <!-- Puedes personalizar el renderizado según tus necesidades -->
-                <div :class="`border-b-${getColorSkill(skill.level)}-500`"
+                <div :class="getBorderColorSkill(skill.level)"
                     class="w-40 flex flex-col py-2 items-center rounded-md  bg-opacity-20 backdrop-blur-md border-b-2 "
                     style="background-image: linear-gradient(to top, rgba(255, 255, 255, 0.068), rgba(255,255,255,0) 50%); backdrop-filter: blur(10px);">
                     <img class="w-10 pb-3" :src="getImageUrl(skill.icon)" :alt="`${skill.icon}`">
@@ -39,14 +39,17 @@ const ColorSkill: Record<string, string> = {
     advanced: 'yellow',
 };
 
+const getBorderColorSkill = (level: string): string => {
+    if (ColorSkill[level] == 'yellow') return `border-b-${ColorSkill[level]}-200`;
+    return `border-b-${ColorSkill[level]}-500`;
+}
+
 const getColorSkill = (level: string): string => {
     return `text-${ColorSkill[level]}-500`;
 }
 
 const getImageUrl = (path: string) => {
     const m = new URL(`${path}`, import.meta.url).href;
-    console.log(m);
-
     return m;
 };
 
