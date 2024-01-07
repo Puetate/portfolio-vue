@@ -16,9 +16,9 @@ const experiences: Experience[] = [
         descExperience: "Development of a scholastic system for the 'Instituto Superior Universitario ITCA'.",
         technologiesUseExperience: [
 
-            { name: "Laravel", icon: "laravel", color: "red" },
-            { name: "NestJS", icon: "nest", color: "red" },
-            { name: "MySQL", icon: "mysql", color: "cyan" }
+            { name: "Laravel", icon: "../assets/laravel.svg", color: "red" },
+            { name: "NestJS", icon: "../assets/nest.svg", color: "red" },
+            { name: "MySQL", icon: "../assets/mysql.svg", color: "cyan" }
         ],
     },
     {
@@ -26,9 +26,9 @@ const experiences: Experience[] = [
         dateExperience: "2023",
         descExperience: "Development of a mobile application for the cultural center of Tungurahua to visualize the most outstanding paintings and the cultural agenda of events.",
         technologiesUseExperience: [
-            { name: "Flutter", icon: "flutter", color: "blue" },
-            { name: "Spring", icon: "spring", color: "green" },
-            { name: "MySQL", icon: "mysql", color: "cyan" },
+            { name: "Flutter", icon: "../assets/flutter.svg", color: "blue" },
+            { name: "Spring", icon: "../assets/spring.svg", color: "green" },
+            { name: "MySQL", icon: "../assets/mysql.svg", color: "cyan" },
         ]
     }
 ]
@@ -129,19 +129,19 @@ const awards: Experience[] = [
                 <!-- <p class=" md:text-white font-bold text-start md:w-2/3 md:text-3xl md:pb-2 subtileExperience">
                     WORK EXPERIENCES
                 </p> -->
-                <ExperienceViewVue :icon-section="`briefcase`" :experiences="experiences"></ExperienceViewVue>
+                <ExperienceViewVue :icon-section="`../assets/briefcase.svg`" :experiences="experiences"></ExperienceViewVue>
             </div>
             <div class="hidden rounded-lg" id="education" role="tabpanel" aria-labelledby="education-tab">
                 <!-- <p class="text-2xl md:text-white font-bold text-start md:w-2/3 md:text-3xl subtileExperience">
                     Other Experiences
                 </p> -->
-                <ExperienceViewVue :icon-section="`cap`" :experiences="education"></ExperienceViewVue>
+                <ExperienceViewVue :icon-section="`../assets/cap.svg`" :experiences="education"></ExperienceViewVue>
             </div>
             <div class="hidden rounded-lg" id="awards" role="tabpanel" aria-labelledby="award-rec-tab">
                 <!-- <p class="text-2xl md:text-white font-bold text-start md:w-2/3 md:text-3xl subtileExperience">
                     Other Experiences
                 </p> -->
-                <ExperienceViewVue :icon-section="`trophy`" :experiences="awards"></ExperienceViewVue>
+                <ExperienceViewVue :icon-section="`../assets/trophy.svg`" :experiences="awards"></ExperienceViewVue>
             </div>
         </div>
 
