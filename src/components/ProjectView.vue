@@ -1,13 +1,13 @@
 
 <script setup lang="ts">
-export interface Technology{
-    name:string,
-    icon:string,
-    color?:string
+export interface Technology {
+    name: string,
+    icon: string,
+    color?: string
 }
 export interface Project {
     nameProject: string;
-    pictureProject: string;
+    pictureProject: string[];
     descProject: string,
     linkGit: string
     technologies: Technology[]
@@ -15,11 +15,17 @@ export interface Project {
 import { IconBrandGithubFilled } from '@tabler/icons-vue';
 import { defineProps } from 'vue';
 import { IconWorld } from '@tabler/icons-vue';
+import Carousel from './Carousel.vue';
 
 
 defineProps<{
     projects?: Project[]
 }>()
+
+const getImageUrl = (path: string) => {
+    const m = new URL(`${path}`, import.meta.url).href;
+    return m;
+};
 
 const getClassForImage = (index: number) => {
     const md = index % 2 === 0 ? "md:right-0" : "md:left-0";
@@ -63,11 +69,14 @@ const getClassForLinks = (index: number) => {
 
 <template>
     <div v-for="(project, index) in projects" :key="index">
-
-        <div class="flex  flex-col items-center  justify-center my-10  border-2 border-x-zinc-100
+        <div class="flex flex-col items-center  justify-center my-10  border-2 border-x-zinc-100
           rounded-lg shadow-lg md:flex-row md:border-none md:shadow-none md:relative md:h-96">
 
-            <img :src="project.pictureProject" alt="" :class="getClassForImage(index)">
+            <div v-if="project.pictureProject.length > 1">
+                <Carousel :images="project.pictureProject"></Carousel>
+            </div>
+            <img v-else :src="getImageUrl(project.pictureProject[0])" alt="" :class="getClassForImage(index)">
+
 
             <div :class="getClassForCard(index)">
                 <div :class="getClassForTitle(index)">
