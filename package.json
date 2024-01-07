@@ -17,7 +17,8 @@
     "tailwindcss-animated": "^1.0.1",
     "vue": "^3.3.11",
     "vue-router": "^4.2.5",
-    "vue-tabler-icons": "^2.21.0"
+    "vue-tabler-icons": "^2.21.0",
+    "vue3-lottie": "^3.2.0"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",

@@ -5,6 +5,29 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
     "./node_modules/flowbite/**/*.js"
   ],
+  safelist: [
+    'bg-red-500',
+    'bg-blue-500',
+    'bg-yellow-500',
+    'bg-green-500',
+    'bg-cyan-500',
+    'bg-fuchsia-500',
+    'bg-teal-500',
+    'text-red-500',
+    'text-blue-500',
+    'text-green-500',
+    'text-yellow-500',
+    'text-cyan-500',
+    'text-fuchsia-500',
+    'text-teal-500',
+    'border-b-red-500',
+    'border-b-blue-500',
+    'border-b-green-500',
+    'border-b-yellow-200',
+    'border-b-cyan-500',
+    'border-b-fuchsia-500',
+    'border-b-teal-500',
+  ],
   theme: {
     extend: {
       colors: {
