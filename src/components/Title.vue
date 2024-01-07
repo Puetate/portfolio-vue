@@ -1,10 +1,11 @@
 
 <template>
-  <div class="border-t-2 border-personal-ternary">
-
-  </div>
-  <div class="text-5xl font-extrabold text-white title">
-    {{ title }}
+  <div class="">
+    <div class="border-t-2 my-10 border-personal-ternary">
+    </div>
+    <div class="text-5xl font-extrabold text-white title">
+      {{ title }}
+    </div>
   </div>
 </template>
   
