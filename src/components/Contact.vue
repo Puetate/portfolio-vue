@@ -23,7 +23,7 @@ let text = [
                 class="underline underline-offset-1 text-slate-300" rel="stylesheet"
                 href="mailto:jhoelpablo02@gmail.com">jhoelpablo02@gmail.com</a>. and my <a
                 class="underline underline-offset-1 text-slate-300" rel="stylesheet"
-                href="https://www.linkedin.com/in/jhoel-puetate-915056127/">LinkedIn</a>. Looking forward to hearing from
+                href="www.linkedin.com/in/jhoel-puetate">LinkedIn</a>. Looking forward to hearing from
             you and
             exploring new possibilities together
         </div>
