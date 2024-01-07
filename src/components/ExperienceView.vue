@@ -2,6 +2,12 @@
 import { defineProps } from 'vue';
 import { Technology } from './ProjectView.vue';
 
+const getIconUrl = (path: string) => {
+    const m = new URL(`${path}`, import.meta.url).href;
+    return m;
+};
+
+
 export interface Experience {
     dateExperience: string;
     companyExperience: string;
@@ -24,7 +30,7 @@ defineProps<{
             <li class="mb-10 ms-10">
                 <span
                     class="absolute flex items-center  mt-2 justify-center w-12 h-12 -start-6 bg-gray-600 rounded-full   dark:ring-gray-900 dark:bg-blue-900">
-                    <img class="w-6" :src="`../assets/${iconSection}.svg`" :alt="`${iconSection}`">
+                    <img class="w-6" :src="getIconUrl(iconSection)" :alt="`${iconSection}`">
 
                 </span>
 
@@ -45,7 +51,7 @@ defineProps<{
                                 style="background-image: linear-gradient(to top, rgba(255, 255, 255, 0.11), rgba(255,255,255,0) 50%); backdrop-filter: blur(10px);">
 
                                 <span>{{ technology.name }}</span>
-                                <img class="w-7" :src="`src/assets/${technology.icon}.svg`" :alt="`${technology.icon}`">
+                                <img class="w-7" :src="getIconUrl(technology.icon)" :alt="`${technology.icon}`">
 
                             </div>
                         </div>
