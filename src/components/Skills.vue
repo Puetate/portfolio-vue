@@ -4,7 +4,7 @@ import Title from './Title.vue';
 
 const title = "SKILLS";
 
-const titleLanguage = "LENGUAJES DE PROGRAMACIÓN";
+const titleLanguage = "PROGRAMMING LANGUAGES";
 const skillLanguages: Skill[] = [
     { nameSkill: "PHP", icon: "../assets/php.svg", color: "cyan", level: "beginner" },
     { nameSkill: "PYTHON", icon: "../assets/python.svg", color: "yellow", level: "beginner" },
@@ -24,7 +24,7 @@ const skillFrameworks: Skill[] = [
     { nameSkill: "FLUTTER", icon: "../assets/flutter.svg", color: "#12c4ff", level: "advanced" },
 ];
 
-const titleDatabase = "BASE DE DATOS";
+const titleDatabase = "DATABASE";
 const skillDatabases: Skill[] = [
     { nameSkill: "POSTGRESQL", icon: "../assets/postgresql.svg", color: "blue", level: "beginner" },
     { nameSkill: "SQL SERVER", icon: "../assets/sqlserver.svg", color: "#1DA1F2", level: "intermediate" },
@@ -32,7 +32,7 @@ const skillDatabases: Skill[] = [
     { nameSkill: "MYSQL", icon: "../assets/mysql.svg", color: "#0096d1", level: "advanced" },
 ];
 
-const titleTool = "SOFTWARE Y HERRAMIENTAS";
+const titleTool = "SOFTWARE AND TOOLS";
 const skillTools: Skill[] = [
     // { nameSkill: "a", icon: "../assets/.svg", color:"blue" , level:"beginner"},
     { nameSkill: "GIT", icon: "../assets/git.svg", color: "blue", level: "intermediate" },
@@ -45,16 +45,9 @@ const skillTools: Skill[] = [
 <template>
     <section class="relative flex flex-col justify-center gap-8 text-text_withe" id="skills">
         <Title :title=title></Title>
-        <!-- <div class="text-5xl font-extrabold  text-text_withe">
-            {{ title }}
-        </div> -->
-        <!-- <div v-for="(skill, index) in skillLanguages" :key="index"> -->
         <SkillViewVue :title=titleLanguage :skills=skillLanguages></SkillViewVue>
         <SkillViewVue :title=titleFramework :skills=skillFrameworks></SkillViewVue>
         <SkillViewVue :title=titleDatabase :skills=skillDatabases></SkillViewVue>
         <SkillViewVue :title=titleTool :skills=skillTools></SkillViewVue>
-
-        <i class='bx bx-user'></i>
-        <!-- </div> -->
     </section>
 </template>
