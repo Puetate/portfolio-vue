@@ -10,7 +10,7 @@ let text = [
 </script>
 
 <template>
-    <section class="w-full my-9 flex flex-row justify-around  items-center text-text_withe" id="home">
+    <section class="w-full my-9 flex flex-row justify-around items-center text-text_withe" id="home">
         <div class="flex flex-col justify-start gap-8 mt-6">
             <div class="">
                 <p class="font-bold text-2xl">
