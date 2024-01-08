@@ -9,11 +9,11 @@ import { IconBrandGithubFilled } from '@tabler/icons-vue';
             <IconBrandGithubFilled :size="40" color="white" stroke-width="1" />
         </a>
 
-        <a class="w-12" href="https://www.linkedin.com/in/jhoel-puetate-915056127/">
+        <a class="w-12" href="https://www.linkedin.com/in/jhoel-puetate/">
             <img src="../assets/linkedin-svgrepo-com.svg" alt="SVG Icon">
         </a>
 
-        <a class="w-10" href="https://www.linkedin.com/in/jhoel-puetate-915056127/">
+        <a class="w-10" href="https://www.instagram.com/jhoel.pueta">
             <img src="../assets/instagram-1-svgrepo-com.svg" alt="SVG Icon">
         </a>
     </div>

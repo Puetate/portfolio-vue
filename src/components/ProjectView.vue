@@ -8,9 +8,10 @@ export interface Technology {
 export interface Project {
     nameProject: string;
     pictureProject: string[];
-    descProject: string,
-    linkGit: string
-    technologies: Technology[]
+    descProject: string;
+    linkGit: string;
+    linkWeb: string;
+    technologies: Technology[];
 }
 import { IconBrandGithubFilled } from '@tabler/icons-vue';
 import { defineProps } from 'vue';
@@ -101,17 +102,17 @@ const getClassForLinks = (index: number) => {
                             style="background-image: linear-gradient(to top, rgba(255, 255, 255, 0.11), rgba(255,255,255,0) 50%); backdrop-filter: blur(10px);">
 
                             <span>{{ technology.name }}</span>
-                            <img class="w-7" :src="`src/assets/${technology.icon}.svg`" :alt="`${technology.icon}`">
+                            <img class="w-7" :src="getImageUrl(technology.icon)" :alt="`${technology.icon}`">
 
                         </div>
                     </div>
                 </ul>
                 <div :class="getClassForLinks(index)">
-                    <a href="https://github.com/Puetate">
+                    <a :href="project.linkGit">
                         <IconBrandGithubFilled :size="40" color="white" stroke-width="1" />
                     </a>
 
-                    <a href="https://github.com/Puetate">
+                    <a v-if="project.linkWeb != '#'" target="_blank" :href="project.linkWeb">
                         <IconWorld :size="40" color="white" stroke-width="1" />
                     </a>
                 </div>
