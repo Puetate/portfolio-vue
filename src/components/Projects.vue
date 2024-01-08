@@ -15,7 +15,7 @@ const projects: Project[] = [
                         { name: "NestJS", icon: "../assets/nest.svg", color: "red" },
                         { name: "MongoDB", icon: "../assets/mongo.svg", color: "green" },
                         { name: "Google Maps API", icon: "../assets/google-maps.svg", color: "red" },
-                        { name: "Dart", icon: "../assets/Dart.svg", color: "cyan" },
+                        { name: "Dart", icon: "../assets/dart.svg", color: "cyan" },
                         { name: "Typescript", icon: "../assets/typescript.svg", color: "blue" },
                 ]
         },
