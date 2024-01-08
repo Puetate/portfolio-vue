@@ -53,8 +53,6 @@ defineProps<{
 
 const getImageUrl = (path: string) => {
     const m = new URL(`${path}`, import.meta.url).href;
-    console.log(m);
-
     return m;
 };
 </script>

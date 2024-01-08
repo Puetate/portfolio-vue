@@ -8,15 +8,6 @@ const title = "ABOUT ME";
 let isInViewport = ref(false);
 const sectionAbout = ref<HTMLElement | null>(null);
 
-// const handleScroll = () => {
-//     // Verifica si el componente está en el viewport
-
-//     if (el.value) {
-//         console.log("aaaaa");
-//     const boundingBox = el.value.getBoundingClientRect();
-//     isInViewport.value = boundingBox.top >= 0 && boundingBox.bottom < window.innerHeight;
-//     }
-// }
 const images: string[] = [
   "../assets/ab_1.webp",
   "../assets/ab_2.webp",

@@ -9,8 +9,6 @@ const scrollToSection = (section: string): void => {
         const contentElement = document.getElementById('content');
         if (contentElement) {
             contentElement.scrollTo({ top: offsetTop, behavior: "smooth" });
-        } else {
-            console.error("El elemento con ID 'content' no existe o es nulo.");
         }
     }
 }
