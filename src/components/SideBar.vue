@@ -17,7 +17,7 @@ const scrollToSection = (section: string): void => {
 </script>
 <template>
     <!-- Sidebar -->
-    <header class="text-slate-200 rounded-b-3xl sticky top-0 z-10 flex py-1 sm:items-center px-14 sm:justify-center md:justify-between md:items-center" id="head" style="background-image: linear-gradient(to top, rgba(255, 255, 255, 0.068), rgba(255,255,255,0) 50%); backdrop-filter: blur(10px);">
+    <header class="text-slate-300 rounded-b-3xl sticky top-0 z-10 flex py-1 sm:items-center px-14 sm:justify-center md:justify-between md:items-center" id="head" style="background-image: linear-gradient(to top, rgba(255, 255, 255, 0.068), rgba(255,255,255,0) 50%); backdrop-filter: blur(10px);">
 
         <!-- Centrar la imagen -->
         <div class="">
@@ -27,22 +27,22 @@ const scrollToSection = (section: string): void => {
         <!-- Opciones del Sidebar -->
         <nav class="">
             <ul class="relative h-max flex flex-row justify-center items-center gap-x-16 font-semibold">
-                <li class=" hover:text-neutral-50">
+                <li class="hover:text-neutral-50 cursor-pointer">
                     <a @click="scrollToSection('home')">Home</a>
                 </li>
-                <li class=" hover:text-neutral-50">
+                <li class=" hover:text-neutral-50 cursor-pointer">
                     <a @click="scrollToSection('about')">About</a>
                 </li>
-                <li class=" hover:text-neutral-50">
+                <li class=" hover:text-neutral-50 cursor-pointer">
                     <a @click="scrollToSection('skills')">Skills</a>
                 </li>
-                <li class=" hover:text-neutral-50">
+                <li class=" hover:text-neutral-50 cursor-pointer">
                     <a @click="scrollToSection('projects')">Projects</a>
                 </li>
-                <li class=" hover:text-neutral-50">
+                <li class=" hover:text-neutral-50 cursor-pointer">
                     <a @click="scrollToSection('experiences')">Experience</a>
                 </li>
-                <li class=" hover:text-neutral-50">
+                <li class=" hover:text-neutral-50 cursor-pointer">
                     <a @click="scrollToSection('contact')">Contact</a>
                 </li>
             </ul>
