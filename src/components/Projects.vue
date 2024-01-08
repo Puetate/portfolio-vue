@@ -11,12 +11,12 @@ const projects: Project[] = [
                 linkWeb:"https://vivo-vivo-app-production.up.railway.app/login",
                 pictureProject: ["../assets/pr_vivovivo.webp"],
                 technologies: [
-                        { name: "Flutter", icon: "flutter", color: "blue" },
-                        { name: "NestJS", icon: "nest", color: "red" },
-                        { name: "MongoDB", icon: "mongo", color: "green" },
-                        { name: "Google Maps API", icon: "google-maps", color: "red" },
-                        { name: "Dart", icon: "Dart", color: "cyan" },
-                        { name: "Typescript", icon: "typescript", color: "blue" },
+                        { name: "Flutter", icon: "../assets/flutter.svg", color: "blue" },
+                        { name: "NestJS", icon: "../assets/nest.svg", color: "red" },
+                        { name: "MongoDB", icon: "../assets/mongo.svg", color: "green" },
+                        { name: "Google Maps API", icon: "../assets/google-maps.svg", color: "red" },
+                        { name: "Dart", icon: "../assets/Dart.svg", color: "cyan" },
+                        { name: "Typescript", icon: "../assets/typescript.svg", color: "blue" },
                 ]
         },
         {
@@ -26,11 +26,11 @@ const projects: Project[] = [
                 linkWeb:"#",
                 pictureProject: ["../assets/pr_capy_1.webp"],
                 technologies: [
-                        { name: "React", icon: "react", color: "cyan" },
-                        { name: "Spring", icon: "spring", color: "green" },
-                        { name: "PostgreSQL", icon: "postgresql", color: "fuchsia" },
-                        { name: "Java", icon: "java", color: "teal" },
-                        { name: "Typescript", icon: "typescript", color: "blue" },
+                        { name: "React", icon: "../assets/react.svg", color: "cyan" },
+                        { name: "Spring", icon: "../assets/spring.svg", color: "green" },
+                        { name: "PostgreSQL", icon: "../assets/postgresql.svg", color: "fuchsia" },
+                        { name: "Java", icon: "../assets/java.svg", color: "teal" },
+                        { name: "Typescript", icon: "../assets/typescript.svg", color: "blue" },
                 ]
         }, {
                 nameProject: "Arte CCT",
@@ -39,12 +39,12 @@ const projects: Project[] = [
                 linkWeb:"#",
                 pictureProject: ["../assets/pr_artecct.webp"],
                 technologies: [
-                        { name: "Flutter", icon: "flutter", color: "blue" },
-                        { name: "Spring", icon: "spring", color: "green" },
-                        { name: "Angular", icon: "angular", color: "red" },
-                        { name: "MySQL", icon: "mysql", color: "cyan" },
-                        { name: "Dart", icon: "dart", color: "blue" },
-                        { name: "Java", icon: "java", color: "teal" },
+                        { name: "Flutter", icon: "../assets/flutter.svg", color: "blue" },
+                        { name: "Spring", icon: "../assets/spring.svg", color: "green" },
+                        { name: "Angular", icon: "../assets/angular.svg", color: "red" },
+                        { name: "MySQL", icon: "../assets/mysql.svg", color: "cyan" },
+                        { name: "Dart", icon: "../assets/dart.svg", color: "blue" },
+                        { name: "Java", icon: "../assets/java.svg", color: "teal" },
                 ]
         },
 ]
