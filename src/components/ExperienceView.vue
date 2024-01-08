@@ -29,7 +29,7 @@ defineProps<{
         <div v-for="(exp, index) in experiences" :key="index">
             <li class="mb-10 ms-10">
                 <span
-                    class="absolute flex items-center  mt-2 justify-center w-12 h-12 -start-6 bg-gray-600 rounded-full   dark:ring-gray-900 dark:bg-blue-900">
+                    class="absolute flex items-center mt-2 justify-center w-12 h-12 -start-6 bg-gray-600 rounded-full   dark:ring-gray-900 dark:bg-blue-900">
                     <img class="w-6" :src="getIconUrl(iconSection)" :alt="`${iconSection}`">
 
                 </span>
