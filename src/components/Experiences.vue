@@ -20,6 +20,7 @@ const experiences: Experience[] = [
             { name: "NestJS", icon: "../assets/nest.svg", color: "red" },
             { name: "MySQL", icon: "../assets/mysql.svg", color: "cyan" }
         ],
+        certificates: []
     },
     {
         companyExperience: "Liaison Intern",
@@ -29,7 +30,8 @@ const experiences: Experience[] = [
             { name: "Flutter", icon: "../assets/flutter.svg", color: "blue" },
             { name: "Spring", icon: "../assets/spring.svg", color: "green" },
             { name: "MySQL", icon: "../assets/mysql.svg", color: "cyan" },
-        ]
+        ],
+        certificates: []
     }
 ]
 
@@ -38,13 +40,18 @@ const education: Experience[] = [
         companyExperience: "CSEI23",
         dateExperience: "2023",
         descExperience: "CSEI23 V Conference on computer science, electronics and industrial engineering",
-        technologiesUseExperience: []
+        technologiesUseExperience: [],
+        certificates: [
+            { name: "Participation", src: "../assets/docs/csei-certificate-participation.PDF"},
+            { name: "Completion", src: "../assets/docs/csei-certificate-completion.PDF"},
+    ]
     },
     {
         companyExperience: "UNIVERSIDAD TÉCNICA DE AMBATO",
         dateExperience: "2024",
         descExperience: "Third level degree in software engineering",
-        technologiesUseExperience: []
+        technologiesUseExperience: [],
+        certificates: []
     },
 ]
 
@@ -53,25 +60,31 @@ const awards: Experience[] = [
         companyExperience: "interuniversity competition for innovative technological projects",
         dateExperience: "DECEMBER 16-17, 2022",
         descExperience: "For having participated and obtaining second place in the multi-academic interuniversity competition (CIMA), carried out by the company ENCUBA S.C., in the month of December 2022.",
-        technologiesUseExperience: []
+        technologiesUseExperience: [],
+        certificates: [{ name: "Participation", src: "../assets/docs/encuba.pdf" }]
     },
     {
         companyExperience: "ministry of labor",
         dateExperience: "MARCH 03, 2023",
         descExperience: "Certificate of labor competencies OFFICE: ADMINISTRATIVE ASSISTANCE WITH OFFICE MANAGEMENT.",
-        technologiesUseExperience: []
+        technologiesUseExperience: [],
+        certificates: [{ name: "Office automation", src: "../assets/docs/ofimatica.pdf" }]
     },
     {
         companyExperience: "academic recognition from the UNIVERSIDAD TÉCNICA DE AMBATO",
         dateExperience: "JULY 21, 2023",
         descExperience: "The faculty of systems, electronic and industrial engineering and the faculty of accounting and auditing confer recognition for their outstanding participation and having obtained second place in the interuniversity competition for technological and innovative projects, organized by the company ENCUBA S.C. from December 16 to 17, 2022 in the city of Ibarra, as a student.",
-        technologiesUseExperience: []
+        technologiesUseExperience: [],
+        certificates: [
+            { name: "FCA", src: "../assets/docs/rec-fca.pdf" },
+            { name: "FISEI", src: "../assets/docs/rec-fisei.pdf" }]
     },
     {
         companyExperience: "Tuapp.org 2023",
         dateExperience: "NOVEMBER 15-17, 2023",
         descExperience: "Certificate to the 'Vivo Vivo' team as FINALIST in the University Apps Tournament - TuApp 2023, held from November 15 to 17, 2023 in the province of Imbabura, Ecuador.",
-        technologiesUseExperience: []
+        technologiesUseExperience: [],
+        certificates: [{ name: "Finalist", src: "../assets/docs/tuapp.pdf" }]
     },
 ]
 
