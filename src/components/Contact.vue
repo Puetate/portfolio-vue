@@ -1,12 +1,23 @@
 <script setup lang="ts">
 import { AutoTyperVue } from 'auto-typer-vue3';
 import Title from './Title.vue';
+import { ref } from 'vue';
+
+const name = ref("");
+const mail = ref("");
+const message = ref("");
 
 const title = "CONTACT";
 let text = [
     'Get in Touch',
     'Send me a message!'
 ];
+
+const sendContact = () => {
+    name.value = "";
+    mail.value = "";
+    message.value = "";
+}
 
 </script>
 
@@ -31,26 +42,26 @@ let text = [
             <div class="flex flex-row justify-between gap-8">
                 <div class="w-1/2">
                     <label for="nombre" class="block text-gray-300 text-sm font-bold mb-2">Name:</label>
-                    <input type="text" id="nombre" name="nombre"
+                    <input type="text" id="nombre" name="nombre" v-model="name"
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:shadow-outline-blue placeholder-gray-300 focus:border-blue-300 bg-personal-ternary"
                         placeholder="Your Name">
                 </div>
                 <div class="w-1/2">
 
                     <label for="correo" class="block text-gray-300 text-sm font-bold mb-2">Email:</label>
-                    <input type="email" id="correo" name="correo"
+                    <input type="email" id="correo" name="correo" v-model="mail"
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:shadow-outline-blue placeholder-gray-300 focus:border-blue-300 bg-personal-ternary"
                         placeholder="Your Email">
                 </div>
             </div>
             <div>
                 <label for="asunto" class="block text-gray-300 text-sm font-bold mb-2">Message:</label>
-                <input type="text" id="asunto" name="asunto"
+                <input type="text" id="asunto" name="asunto" v-model="message"
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:shadow-outline-blue placeholder-gray-300 focus:border-blue-300 bg-personal-ternary"
                     placeholder="Your Message">
 
             </div>
-            <button class="w-full p-1.5 rounded-md font-medium bg-text_orange border-spacing-1 text-black"
+            <button class="w-full p-1.5 rounded-md font-medium bg-text_orange border-spacing-1 text-black" :onClick="sendContact"
                 style="background: linear-gradient(to right, #6dc1f5, #0835b3);">SEND</button>
 
         </div>
