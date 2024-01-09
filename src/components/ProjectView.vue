@@ -108,7 +108,7 @@ const getClassForLinks = (index: number) => {
                     </div>
                 </ul>
                 <div :class="getClassForLinks(index)">
-                    <a :href="project.linkGit">
+                    <a v-if="project.linkGit != '#'" :href="project.linkGit">
                         <IconBrandGithubFilled :size="40" color="white" stroke-width="1" />
                     </a>
 

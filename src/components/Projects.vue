@@ -47,9 +47,9 @@ const projects: Project[] = [
                         { name: "Java", icon: "../assets/java.svg", color: "teal" },
                 ]
         }, {
-                nameProject: "Travesía Financiera",
+                nameProject: "Financial Journey",
                 descProject: "Web application for the management of the game 'Financial Journey' by the cooperative Pablo Muñoz Vega, a game similar to Pokémon GO.",
-                linkGit: "https://github.com/Puetate/arteCCT-app",
+                linkGit: "#",
                 linkWeb: "#",
                 pictureProject: ["../assets/pmv.webp"],
                 technologies: [
