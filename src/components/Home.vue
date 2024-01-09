@@ -2,11 +2,21 @@
 import { AutoTyperVue } from "auto-typer-vue3";
 import SocialNetworks from "./SocialNetworks.vue";
 import { Vue3Lottie } from 'vue3-lottie'
-
 import AnimDev from '../assets/an_dev_1.json'
+
 let text = [
     'Welcome to my portfolio as a developer.',
 ];
+const getImageUrl = (path: string) => {
+    const m = new URL(`${path}`, import.meta.url).href;
+    return m;
+};
+const cvAsset = "../assets/docs/Curriculum-Jhoel_Puetate.pdf";
+const openPDF = () => {
+    // Reemplaza 'ruta-al-archivo.pdf' con la ruta real de tu PDF
+    const pdfUrl = getImageUrl(cvAsset)
+    window.open(pdfUrl, '_blank')
+}
 </script>
 
 <template>
@@ -31,7 +41,7 @@ let text = [
                 <a class="underline underline-offset-1 text-slate-300" rel="stylesheet"
                     href="mailto:jhoelpablo02@gmail.com">jhoelpablo02@gmail.com</a>.
             </div>
-            <button class="w-36 p-1.5 rounded-md border-spacing-1 text-white"
+            <button class="w-36 p-1.5 rounded-md border-spacing-1 text-white" @click="openPDF"
                 style="background: linear-gradient(to right, #6dc1f5, #0835b3);">Download CV</button>
             <SocialNetworks />
         </div>
