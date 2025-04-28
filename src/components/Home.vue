@@ -39,7 +39,7 @@ const openPDF = () => {
             <div class="text-lg text-personal-white">
                 If you wish to get in touch with me, write to me at:
                 <a class="underline underline-offset-1 text-slate-300" rel="stylesheet"
-                    href="mailto:jhoelpablo02@gmail.com">jhoelpablo02@gmail.com</a>.
+                    href="mailto:pablojpm.dev@gmail.com">pablojpm.dev@gmail.com</a>.
             </div>
             <button class="w-36 p-1.5 rounded-md border-spacing-1 text-white" @click="openPDF"
                 style="background: linear-gradient(to right, #6dc1f5, #0835b3);">Download CV</button>

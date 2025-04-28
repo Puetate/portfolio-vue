@@ -32,7 +32,7 @@ const sendContact = () => {
         <div class="w-2/3 text-justify text-personal-white">
             Connect with me to discuss exciting opportunities, collaborations, and projects. I can be reached via <a
                 class="underline underline-offset-1 text-slate-300" rel="stylesheet"
-                href="mailto:jhoelpablo02@gmail.com">jhoelpablo02@gmail.com</a>. and my <a
+                href="mailto:pablojpm.dev@gmail.com">pablojpm.dev@gmail.com</a>. and my <a
                 class="underline underline-offset-1 text-slate-300" rel="stylesheet"
                 href="www.linkedin.com/in/jhoel-puetate">LinkedIn</a>. Looking forward to hearing from
             you and
