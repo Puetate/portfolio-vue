@@ -48,7 +48,7 @@ const education: Experience[] = [
     },
     {
         companyExperience: "UNIVERSIDAD TÉCNICA DE AMBATO",
-        dateExperience: "2024",
+        dateExperience: "2025",
         descExperience: "Third level degree in software engineering",
         technologiesUseExperience: [],
         certificates: []
